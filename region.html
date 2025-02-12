@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Region</title>
+    <link rel="stylesheet" href="styles/region.css">
+    <script src="scripts/region.js" type="module"></script>
+</head>
+<body>
+    <div class="main-wrapper">
+        <aside class="search-wrapper">
+            <form action="submit" class="search-form">
+                <label class="form-label" for="name-input">Name</label>
+                <input placeholder="Search..." type="text" id="name-input">
+
+                <label class="form-label">Sorting</label>
+                <div class="sort-option">
+                    <label for="ascending-option" class="sort-option-label">
+                        <input type="radio" value="ascending" id="ascending-option" name="sort">
+                        Ascending
+                    </label>
+                </div>
+                <div class="sort-option">
+                    <label for="descending-option" class="sort-option-label">
+                        <input type="radio" value="descending" id="descending-option" name="sort">
+                        Descending
+                    </label>
+                </div>                
+                
+                <button class="apply-button">Apply</button>
+            </form>
+        </aside>
+
+        <main class="countries-section">
+            <ul>
+            </ul>
+        </main>
+    </div>
+</body>
+</html>
